@@ -1,0 +1,29 @@
+<div class="signup-container">
+  <h1>Signup</h1>
+  
+  <div class="input-container">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" [(ngModel)]="username">
+  </div>
+
+  <div class="input-container">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" [(ngModel)]="password">
+  </div>
+
+  <div class="input-container">
+    <label for="match_password">Confirm Password:</label>
+    <input type="password" id="match_password" name="match_password" placeholder="Confirm your password" [(ngModel)]="confirmPassword">
+  </div>
+
+  <div class="input-container">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" [(ngModel)]="email">
+  </div>
+
+  <div class="button-container">
+    <button class="cancel-btn" (click)="goToLogin()">Cancel</button>
+    <button class="signup-btn" (click)="signup()">Signup</button>
+  </div>
+  <div><p class="warning">{{warning}}</p></div>
+</div>

@@ -1,0 +1,32 @@
+<div class="add-employee-container">
+  <h1>Add Employee</h1>
+  <div class="input-container">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter first name" [(ngModel)]="firstName">
+  </div>
+  <div class="input-container">
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter last name" [(ngModel)]="lastName">
+  </div>
+  <div class="input-container">
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" [(ngModel)]="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div class="input-container">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email" [(ngModel)]="email">
+  </div>
+  <div class="input-container">
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" placeholder="Enter salary" [(ngModel)]="salary">
+  </div>
+  <div class="button-container">
+    <button class="save-btn" (click)="saveEmployee()">Save</button>
+    <button class="cancel-btn" (click)="goBackToList()">Cancel</button>
+  </div>
+  <div><p class="warning">{{warning}}</p></div>
+</div>

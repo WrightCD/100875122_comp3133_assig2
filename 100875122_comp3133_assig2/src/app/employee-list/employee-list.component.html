@@ -1,0 +1,28 @@
+<div class="employee-list-container">
+  <h1 style="text-align: center;">Employees List</h1>
+
+  <button class="add-btn" (click)="goToAddEmployee()">Add Employee</button>
+
+  <table class="employee-list-table">
+    <thead>
+      <tr>
+        <th>Employee First Name</th>
+        <th>Employee Last Name</th>
+        <th>Employee Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees; let i = index" [class.even]="i % 2 === 0">
+        <td>{{ employee.first_name }}</td>
+        <td>{{ employee.last_name }}</td>
+        <td>{{ employee.email }}</td>
+        <td>
+          <button class="update-btn" (click)="updateEmployee(employee)">Update</button>
+          <button class="delete-btn" (click)="deleteEmployee(employee)">Delete</button>
+          <button class="view-btn" (click)="viewEmployeeDetails(employee)">View</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

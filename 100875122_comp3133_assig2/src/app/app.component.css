@@ -1,0 +1,23 @@
+.container {
+  background-color: #3a0a52;
+  color: white; 
+  border: 2px solid white; 
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.container button {
+  background-color: purple; 
+  color: white; 
+  border: 2px solid yellow;
+  width: 250px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+}
+
+.container button:hover {
+  background-color: violet; 
+  color: white;
+  border: none;
+}

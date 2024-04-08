@@ -1,0 +1,22 @@
+.details-container {
+  text-align: center;
+}
+
+.details-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.back-btn {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: darkorange;
+}

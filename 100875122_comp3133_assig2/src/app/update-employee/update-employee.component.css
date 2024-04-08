@@ -1,0 +1,50 @@
+.update-employee-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.update-employee-container h1 {
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container select {
+  width: calc(100% - 20px);
+  padding: 5px;
+}
+
+.button-container {
+  text-align: right;
+}
+
+.button-container button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: green;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: red;
+  color: white;
+}
+
+.save-btn:hover, .cancel-btn:hover {
+  opacity: 0.8;
+}

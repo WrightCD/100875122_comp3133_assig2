@@ -1,0 +1,11 @@
+<div class="details-container">
+  <h1>View Employee Details</h1>
+  <div class="details-box">
+    <p>Employee First Name: {{ employee?.first_name }}</p>
+    <p>Employee Last Name: {{ employee?.last_name }}</p>
+    <p>Gender: {{ employee?.gender }}</p>
+    <p>Email ID: {{ employee?.email }}</p>
+    <p>Salary: {{ employee?.salary }}</p>
+    <button class="back-btn" (click)="goBackToList()">Back to Employee List</button>
+  </div>
+</div>

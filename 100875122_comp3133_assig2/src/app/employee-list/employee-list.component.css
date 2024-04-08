@@ -1,0 +1,57 @@
+.employee-list-container {
+  margin: 20px auto;
+}
+
+.employee-list-table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.employee-list-table th, .employee-list-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.employee-list-table th {
+  background-color: lightblue;
+}
+
+.employee-list-table tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.employee-list-table td button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.employee-list-table td button.update-btn {
+  background-color: darkblue;
+  color: white;
+}
+
+.employee-list-table td button.delete-btn {
+  background-color: red;
+  color: white;
+}
+
+.employee-list-table td button.view-btn {
+  background-color: orange;
+  color: white;
+}
+
+.add-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: darkblue;
+}
