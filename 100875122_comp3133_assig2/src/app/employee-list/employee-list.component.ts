@@ -20,19 +20,21 @@ export class EmployeeListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    //Force Redirct
     const loginCookie = this.cookieService.get('login');
     if (!loginCookie) {
-      // Redirect to login page if the "login" cookie is not detected
       this.router.navigate(['login']);
-      return; // Stop further execution
+      return; 
     }
     this.getAllEmployees();
   }
 
+  //Update Employee
   updateEmployee(employee: Employee) {
     this.router.navigate(['update_employee', { employee: JSON.stringify(employee) }]);
   }
 
+  // Delete Employee w/ warning
   deleteEmployee(employee: Employee) {
     const isConfirmed = confirm(`Are you sure you want to delete ${employee.first_name} ${employee.last_name} permanently?`);
     if (isConfirmed) {
@@ -40,14 +42,17 @@ export class EmployeeListComponent implements OnInit {
     }
   }
 
+  // View Details Page
   viewEmployeeDetails(employee: Employee) {
     this.router.navigate(['view_employee', { employee: JSON.stringify(employee) }]);
   }
 
+  // Add Employee
   goToAddEmployee() {
     this.router.navigate(['add_employee']);
   }
 
+  //Get All employees
   getAllEmployees() {
     const GET_ALL_EMPLOYEES = gql`
       query GetAllEmployees {

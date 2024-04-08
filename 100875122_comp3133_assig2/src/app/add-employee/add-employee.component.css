@@ -48,3 +48,7 @@
 .save-btn:hover, .cancel-btn:hover {
   opacity: 0.8;
 }
+
+.warning{
+  color: red;
+}
